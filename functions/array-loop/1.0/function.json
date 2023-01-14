@@ -1,0 +1,78 @@
+{
+  "description": "Loops through a given array of numbers or strings.",
+  "label": "Arrayloop",
+  "category": "FLOW",
+  "icon": {
+    "name": "LoopIcon",
+    "color": "Blue"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true,
+          "allowedKinds": []
+        }
+      },
+      "name": "collection",
+      "label": "Array",
+      "info": "The array you want to loop through."
+    },
+    {
+      "info": "Type of output",
+      "label": "Output Type",
+      "meta": {
+        "type": "Select",
+        "values": [
+          {
+            "label": "Number",
+            "value": "number"
+          },
+          {
+            "label": "Text",
+            "value": "text"
+          }
+        ]
+      },
+      "name": "iteratorType"
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number",
+          "scoped": true
+        }
+      },
+      "name": "asNumber",
+      "label": "Iterator number name",
+      "info": "The name for the iterator under which the object of each iteration will be available."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text",
+          "scoped": true
+        }
+      },
+      "name": "asText",
+      "label": "Iterator text name",
+      "info": "The name for the iterator under which the object of each iteration will be available."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number",
+          "scoped": true
+        }
+      },
+      "name": "index",
+      "label": "Index",
+      "info": "The name for the variable under which the current iteration will be available. Starts at 0. For example, in the 1st iteration this variable holds the value 0 and in 10th iteration, this variable holds the value 9."
+    }
+  ],
+  "yields": "ALL"
+}
