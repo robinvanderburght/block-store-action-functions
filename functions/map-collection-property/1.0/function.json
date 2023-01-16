@@ -1,0 +1,40 @@
+{
+  "description": "Description",
+  "label": "Map Collection Property",
+  "category": "Misc",
+  "icon": {
+    "name": "ListBulletIcon",
+    "color": "Yellow"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Collection",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "collection",
+      "label": "Collection"
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "propName",
+      "label": "Property name",
+      "info": "The Data API property name you want to use."
+    },
+    {
+      "name": "result",
+      "label": "Result",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
